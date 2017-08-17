@@ -40,3 +40,17 @@ https://getcomposer.org/download/
 	composer create-project --prefer-dist laravel/laravel blog
 	```
 	
+### 常见问题
+#### XAMPP 出现 Access forbidden! 错误
+权限<Directory>权限配置的问题
+解决：
+```javascript
+DocumentRoot  "F:\laravel"
+\<Directory />
+    Options +Indexes +FollowSymLinks +ExecCGI
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    Require all granted
+\</Directory>
+```
