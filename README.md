@@ -42,15 +42,17 @@ https://getcomposer.org/download/
 	
 ### 常见问题
 #### XAMPP 出现 Access forbidden! 错误
-权限<Directory>权限配置的问题
+权限\<Directory>权限配置的问题<br>
 解决：
-```javascript
-DocumentRoot  "F:\laravel"
-\<Directory />
-    Options +Indexes +FollowSymLinks +ExecCGI
-    AllowOverride All
-    Order allow,deny
-    Allow from all
-    Require all granted
-\</Directory>
-```
+  找到httpd.conf文件(路径如：F:\xampp\apache\conf\httpd.conf)，找到AllowOverride none这行<br>
+  修改为：
+  ```javascript
+  DocumentRoot  "F:\laravel"
+  <Directory />
+      Options +Indexes +FollowSymLinks +ExecCGI
+      AllowOverride All
+      Order allow,deny
+      Allow from all
+      Require all granted
+  </Directory>
+  ```
