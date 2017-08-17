@@ -22,8 +22,8 @@ https://getcomposer.org/download/
   ```javascript
   * php composer-setup.php    执行安装过程。
   ```
-  * php -r "unlink('composer-setup.php');"    删除安装脚本。
   ```javascript
+  * php -r "unlink('composer-setup.php');"    删除安装脚本。
   ```
 8. 全局安装
 * 1 找到并进入 PHP 的安装目录（和你在命令行中执行的 php 指令应该是同一套 PHP）。
