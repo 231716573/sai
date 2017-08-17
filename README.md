@@ -10,20 +10,20 @@ https://getcomposer.org/download/
 点击：`Composer-Setup.exe`
 
 #### 如出现：`Failed to decode zlib stream`
-原因：外网墙的原因
+原因：外网墙的原因<br>
 解决：
-1. 确保xampp里面的php目录里面存在php.exe，右键php.exe->常规->位置，复制php.exe的路径
-2. 点击我的电脑->右键点击属性->系统属性->高级->环境变量->系统变量->Path，双击Path在后面加上php.exe的路径。
-3. WIN键 + R键，输入cmd，输入php -v，确保能使用php命令
-4. 打开命令行并依次执行下列命令安装最新版本的 Composer：
+* 1. 确保xampp里面的php目录里面存在php.exe，右键php.exe->常规->位置，复制php.exe的路径
+* 2. 点击我的电脑->右键点击属性->系统属性->高级->环境变量->系统变量->Path，双击Path在后面加上php.exe的路径。
+* 3. WIN键 + R键，输入cmd，输入php -v，确保能使用php命令
+* 4. 打开命令行并依次执行下列命令安装最新版本的 Composer：
   ```javascript
   * php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');"   下载安装脚本 － composer-setup.php － 到当前目录。
   ```
   ```javascript
   * php composer-setup.php    执行安装过程。
   ```
-  ```javascript
   * php -r "unlink('composer-setup.php');"    删除安装脚本。
+  ```javascript
   ```
 8. 全局安装
 * 1、找到并进入 PHP 的安装目录（和你在命令行中执行的 php 指令应该是同一套 PHP）。
