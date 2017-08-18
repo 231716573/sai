@@ -28,7 +28,10 @@ https://getcomposer.org/download/
 8. 全局安装
 * 1 找到并进入 PHP 的安装目录（和你在命令行中执行的 php 指令应该是同一套 PHP）。
 * 2 将 composer.phar 复制到 PHP 的安装目录下面，也就是和 php.exe 在同一级目录。
-* 3 在 PHP 安装目录下新建一个 composer.bat 文件，并将下列代码保存到此文件中。
+* 3 在 PHP 安装目录下新建一个 composer.bat 文件，并将下列代码保存到此文件中，也就是和 php.exe 在同一级目录。
+  ```javascript
+  @php "%~dp0composer.phar" %*
+  ```
 9. 最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
 10. 提示：不要忘了经常执行 composer selfupdate 以保持 Composer 一直是最新版本哦！
 11. 在命令里输入以下代码切换到中国源：
@@ -41,7 +44,7 @@ https://getcomposer.org/download/
 	```
 	
 ### 常见问题
-#### XAMPP 出现 Access forbidden! 错误
+#### 1、XAMPP 出现 Access forbidden! 错误
 权限\<Directory>权限配置的问题<br>
 解决：
   找到httpd.conf文件(路径如：F:\xampp\apache\conf\httpd.conf)，找到AllowOverride none这行<br>
