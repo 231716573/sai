@@ -25,20 +25,20 @@ https://getcomposer.org/download/
   ```javascript
   * php -r "unlink('composer-setup.php');"    删除安装脚本。
   ```
-8. 全局安装
+#### 全局安装
 * 1 找到并进入 PHP 的安装目录（和你在命令行中执行的 php 指令应该是同一套 PHP）。
 * 2 将 composer.phar 复制到 PHP 的安装目录下面，也就是和 php.exe 在同一级目录。
 * 3 在 PHP 安装目录下新建一个 composer.bat 文件，并将下列代码保存到此文件中，也就是和 php.exe 在同一级目录。
   ```javascript
   @php "%~dp0composer.phar" %*
   ```
-9. 最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
-10. 提示：不要忘了经常执行 composer selfupdate 以保持 Composer 一直是最新版本哦！
-11. 在命令里输入以下代码切换到中国源：
+#### 最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
+#### 提示：不要忘了经常执行 composer selfupdate 以保持 Composer 一直是最新版本哦！
+#### 在命令里输入以下代码切换到中国源：
 	```javascript
 	composer config -g repo.packagist composer https://packagist.phpcomposer.com 
 	```
-12. 进入一个目录/文件夹，安装laravel(composer create-project --prefer-dist laravel/laravel 项目名)：
+#### 进入一个目录/文件夹，安装laravel(composer create-project --prefer-dist laravel/laravel 项目名)：
 	```javascript
 	composer create-project --prefer-dist laravel/laravel blog
 	```
