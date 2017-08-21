@@ -32,7 +32,7 @@ https://getcomposer.org/download/
   ```javascript
   @php "%~dp0composer.phar" %*
   ```
-#### 最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
+  最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
 #### 提示：不要忘了经常执行 composer selfupdate 以保持 Composer 一直是最新版本哦！
 #### 在命令里输入以下代码切换到中国源：
 
