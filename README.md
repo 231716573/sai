@@ -35,13 +35,13 @@ https://getcomposer.org/download/
 #### 最后重新打开一个命令行窗口试一试执行 composer --version 看看是否正确输出版本号
 #### 提示：不要忘了经常执行 composer selfupdate 以保持 Composer 一直是最新版本哦！
 #### 在命令里输入以下代码切换到中国源：
-	```javascript
+	<!-- ```javascript -->
 	composer config -g repo.packagist composer https://packagist.phpcomposer.com 
-	```
+	<!-- ``` -->
 #### 进入一个目录/文件夹，安装laravel(composer create-project --prefer-dist laravel/laravel 项目名)：
-	```javascript
+	<!-- ```javascript -->
 	composer create-project --prefer-dist laravel/laravel blog
-	```
+	<!-- ``` -->
 	
 ### 常见问题
 #### 1、XAMPP 出现 Access forbidden! 错误
