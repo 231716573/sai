@@ -59,3 +59,32 @@ https://getcomposer.org/download/
       Require all granted
   </Directory>
   ```
+
+#### 2、```javascriptphp artisan migrate``
+数据库配置失败的问题<br>
+解决：
+  在根目录找到.env文件，配置好数据库，例如：
+  ```javascript
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE=test
+  DB_USERNAME=root
+  DB_PASSWORD=null
+  ```
+  为了正常显示，在config目录找到database.php文件，设置好mysql的配置内容，如：
+  ```javascript
+  'mysql' => [
+    'driver' => 'mysql',
+    'host' => env('DB_HOST', 'localhost'),
+    'port' => env('DB_PORT', '3306'),
+    'database' => env('DB_DATABASE', 'test'),
+    'username' => env('DB_USERNAME', 'root'),
+    'password' => env('DB_PASSWORD', ''),
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix' => '',
+    'strict' => false,
+    'engine' => null,
+  ],
+  ```
