@@ -88,3 +88,31 @@ https://getcomposer.org/download/
     'engine' => null,
   ],
   ```
+
+
+### laravel 小实例
+
+#### 第一步：创建路由
+路径在：......\laravel\app\Http
+```javascript
+Route::get('/', 'WeblcomeController@index');
+```
+
+
+#### 第二步：创建模型
+为控制器引入数据<br>
+在数据库中创建一个数据库<br>
+然后打开 .env 配置完成<br>
+
+然后创建模型：
+```javascript
+php artisan make:model Test
+```
+
+再输PHP artisan migrate  自动创建tests数据表
+```javascript
+php artisan make:migration create_test_table --create=test
+```
+
+
+#### 第三步：创建路由
