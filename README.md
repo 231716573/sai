@@ -145,7 +145,7 @@ public function index(){
   return view('welcome', ['tests' => $tests]);
 }
 ```
-![images/AN54$JQ9PTT%KUHIR[]@D2C.png](https://github.com/231716573/sai.github.io/blob/master/images/AN54$JQ9PTT%KUHIR[]@D2C.png)
+![images/AN54%24JQ9PTT%25KUHIR%5B%5D%40D2C.png](https://github.com/231716573/sai.github.io/blob/master/images/AN54%24JQ9PTT%25KUHIR%5B%5D%40D2C.png)
 
 这样，就可以把tests表的内容，用$tests去获取<br>
 视图文件路径：......\laravel\resources\views\welcome.blade.php <br>
