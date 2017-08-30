@@ -114,7 +114,7 @@ php artisan make:model Test
 php artisan make:migration create_test_table --create=test
 ```
 往数据库添加表字段：<br>
-![images/20150828205525619.jpg](https://github.com/231716573/sai.github.io/images/20150828205525619.jpg)
+![images/20150828205525619.jpg](https://github.com/231716573/sai.github.io/blob/master/images/20150828205525619.jpg)
 
 再输入```javascriptphp artisan migrate``` 就会发现数据库中多了两个字段(name 和 password)
 
