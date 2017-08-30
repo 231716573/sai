@@ -113,7 +113,42 @@ php artisan make:model Test
 ```javascript
 php artisan make:migration create_test_table --create=test
 ```
+往数据库添加表字段：
+![images/20150828205525619.jpg](https://github.com/231716573/sai.github.io/images/20150828205525619.jpg)
 
-![添加数据库](https://github.com/231716573/sai.github.io/images/20150828205525619.jpg)
+再输入```javascriptphp artisan migrate``` 就会发现数据库中多了两个字段(name 和 password)
 
-#### 第三步：创建路由
+打开数据库随便添加一条数据
+#### 第三步：创建控制器
+
+由于该控制器是下载Laravel就自带有的，所以不需要创建。若要创建则输入
+```javascript
+php artisan make:controller xxxxController
+```
+
+打开......\laravel\app\Http\Controllers\WelcomeController.php  ,先在
+```javascript
+<?php 
+  namespace App\Http\Controllers;
+```
+  下面输入 use App\Test;use DB; 来引入模型,再修改index为：
+
+```javascript
+public function index(){
+
+  $tests = DB::table('tests')->get();
+
+  return view('welcome', ['tests' => $tests]);
+}
+```
+这样，就可以把tests表的内容，用$tests去获取<br>
+视图文件路径：......\laravel\resources\views\welcome.blade.php <br>
+如：
+```javascript
+<div class="panel-body">
+    @foreach($tests as $test)
+        {{ $test->name }}
+        {{ $test->password }}
+    @endforeach
+</div>
+```
