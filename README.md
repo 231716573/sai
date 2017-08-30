@@ -42,6 +42,10 @@ https://getcomposer.org/download/
 
 	composer create-project --prefer-dist laravel/laravel blog
 
+指定版本：
+
+  composer create-project --prefer-dist laravel/laravel=5.2.* blog
+
 	
 ### 常见问题
 #### 1、XAMPP 出现 Access forbidden! 错误
@@ -60,7 +64,7 @@ https://getcomposer.org/download/
   </Directory>
   ```
 
-#### 2、```javascriptphp artisan migrate``
+#### 2、```javascript php artisan migrate```
 数据库配置失败的问题<br>
 解决：
   在根目录找到.env文件，配置好数据库，例如：
@@ -90,7 +94,7 @@ https://getcomposer.org/download/
   ```
 
 
-### laravel 小实例
+### 1/Laravel 小实例
 
 #### 第一步：创建路由
 路径在：......\laravel\app\Http
