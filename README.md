@@ -114,6 +114,6 @@ php artisan make:model Test
 php artisan make:migration create_test_table --create=test
 ```
 
-![添加数据库](https://github.com/231716573/sai.github.io/tree/master/images/20150828205525619.jpg)
+![添加数据库](sai.github.io/images/20150828205525619.jpg)
 
 #### 第三步：创建路由
