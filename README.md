@@ -136,7 +136,6 @@ php artisan make:controller xxxxController
   use App\Test;
   use DB;
 ``` 
-
 来引入模型,再修改index为：
 ```javascript
 public function index(){
@@ -146,14 +145,9 @@ public function index(){
   return view('welcome', ['tests' => $tests]);
 }
 ```
+![images/AN54$JQ9PTT%KUHIR[]@D2C.png](https://github.com/231716573/sai.github.io/blob/master/images/AN54$JQ9PTT%KUHIR[]@D2C.png)
+
 这样，就可以把tests表的内容，用$tests去获取<br>
 视图文件路径：......\laravel\resources\views\welcome.blade.php <br>
-如：
-```javascript
-<div class="panel-body">
-    @foreach($tests as $test)
-        {{ $test->name }}
-        {{ $test->password }}
-    @endforeach
-</div>
-```
+如：<br>
+![images/20150828225956083.jpg](https://github.com/231716573/sai.github.io/blob/master/images/20150828225956083.jpg)
