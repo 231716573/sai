@@ -113,7 +113,7 @@ php artisan make:model Test
 ```javascript
 php artisan make:migration create_test_table --create=test
 ```
-往数据库添加表字段：
+往数据库添加表字段：<br>
 ![images/20150828205525619.jpg](https://github.com/231716573/sai.github.io/images/20150828205525619.jpg)
 
 再输入```javascriptphp artisan migrate``` 就会发现数据库中多了两个字段(name 和 password)
@@ -131,8 +131,13 @@ php artisan make:controller xxxxController
 <?php 
   namespace App\Http\Controllers;
 ```
-  下面输入 use App\Test;use DB; 来引入模型,再修改index为：
+下面输入<br> 
+```javascript
+  use App\Test;
+  use DB;
+``` 
 
+来引入模型,再修改index为：
 ```javascript
 public function index(){
 
