@@ -46,7 +46,7 @@ https://getcomposer.org/download/
 
   composer create-project --prefer-dist laravel/laravel=5.2.* blog
 
-### 强大的Auth 系统
+### #强大的Auth 系统
 Laravel 利用 PHP5.4 的新特性 trait 内置了非常完善好用的简单用户登录注册功能，适合一些不需要复杂用户权限管理的系统，例如公司内部用的简单管理系统。<br>
 激活这个功能非常容易，运行以下命令：
 ```javascript
