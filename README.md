@@ -46,6 +46,13 @@ https://getcomposer.org/download/
 
   composer create-project --prefer-dist laravel/laravel=5.2.* blog
 
+### 强大的Auth 系统
+Laravel 利用 PHP5.4 的新特性 trait 内置了非常完善好用的简单用户登录注册功能，适合一些不需要复杂用户权限管理的系统，例如公司内部用的简单管理系统。<br>
+激活这个功能非常容易，运行以下命令：
+```javascript
+php artisan make:auth
+```
+
 	
 ### 常见问题
 #### 1、XAMPP 出现 Access forbidden! 错误
@@ -120,7 +127,7 @@ php artisan make:migration create_test_table --create=test
 往数据库添加表字段：<br>
 ![images/20150828205525619.jpg](https://github.com/231716573/sai.github.io/blob/master/images/20150828205525619.jpg)
 
-再输入```javascriptphp artisan migrate``` 就会发现数据库中多了两个字段(name 和 password)
+再输入```javascript php artisan migrate``` 就会发现数据库中多了两个字段(name 和 password)
 
 打开数据库随便添加一条数据
 #### 第三步：创建控制器
